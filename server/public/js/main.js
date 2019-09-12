@@ -378,6 +378,7 @@ function construirNivel(nivel, n){
         divCol12.append(divContainerPreg2);
         divContainerPreg2.append(divRowPreg2);
         divRowPreg2.append(divCol3_1);
+        var numErr=1;
         for (var p in pregunta["opcionRespuesta"]){
             //Se generan las opciones para el NIvel 1
             var claseBtn = "";
@@ -393,8 +394,10 @@ function construirNivel(nivel, n){
                 var idBtn;
                 if (pregunta["opcionRespuesta"][p]["respuestaValida"])
                     idBtn = "btnRespuestaOk_Pregunta"+n+(parseInt(key,10)+1);
-                else
-                    idBtn = "btnRespuestaErr"+(parseInt(key,10)+1)+"_Pregunta"+n+(parseInt(key,10)+1);
+                else{
+                    idBtn = "btnRespuestaErr"+numErr+"_Pregunta"+n+(parseInt(key,10)+1);
+                    numErr++;
+                }
 
                 divRowPreg2.append('<div class="' + claseBtn + '">' +
                     '<button type="button" class="btn btn-secondary btn-lg" id=' 
