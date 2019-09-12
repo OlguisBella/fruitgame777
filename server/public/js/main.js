@@ -407,23 +407,24 @@ function construirNivel(nivel, n){
     }
     /*Fin de cada pregunta*/
 
-    /*Boton siguiente*/
+    /*Boton siguiente*/  
     var divContainerSgt = $("<div></div>")
-        .attr("class", "container");    
+        .attr("class", "container");      
     var divRowSgt = $("<div></div>")
         .attr("class", "row");
     var divCol12Sgt = $("<div></div>")
         .attr("class", "col-lg-12");
     var aSgt = $("<a></a>")
-        .attr("href", "#")
+        .attr("href", "#")       
         .attr("id", "btnSiguientePregunta");
     var imgSgt = $("<img></img>")
         .attr("src", "../images/BOTONES/SIGUIENTE.png")
         .attr("class", "img-fluid center-block");
-    //section.append(divContainerSgt);
+    //section.append(divContainerSgt);    
     divContainerSgt.append(divRowSgt);
     divRowSgt.append(divCol12Sgt);
     divCol12Sgt.append(aSgt);
+   
     aSgt.append(imgSgt);
     $('#juego').append(center);
     //$('#juego').append(divContainerSgt);
