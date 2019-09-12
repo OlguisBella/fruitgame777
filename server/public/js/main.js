@@ -657,9 +657,9 @@ function ocultarOMostrarSeccionPreguntaN1(numPreguntas) {
     if (contadorDePregunta == numPreguntas) {
         valorNivel = 5;
         nivelActual++;
-        $("#seccionPreg" + nivelActual + contadorDePregunta).show();
-        $("#seccionEvaluacion").fadeOut();
         contadorDePregunta = 1;
+        $("#seccionPreg" + nivelActual + contadorDePregunta).show();
+        $("#seccionEvaluacion").fadeOut();        
         EvaluarPregunta();
         seccionEvaluacion2();
     }
