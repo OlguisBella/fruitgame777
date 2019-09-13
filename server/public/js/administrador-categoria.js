@@ -40,7 +40,7 @@ function construirLista() {
             .text(id);
         var div = $("<div></div>");
         var h2Nombre = $("<h2></h2>")
-            .text(id + ". " + nombre);;
+            .text(id + ". " + nombre);
             
         var imgEdit = $("<img></img>")
             .attr("src", "./images/BOTONES/EDITAR.png")
@@ -120,6 +120,7 @@ function contruirForm(accion, id) {
         .attr("name", "nombre")
         .attr("placeholder", "Nombre de " + nombre_tipo + "...")
         .prop('required', true);
+     
 
     var submit = $("<input></input>")
         .attr("type", "submit")
