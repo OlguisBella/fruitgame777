@@ -663,7 +663,7 @@ function ocultarOMostrarSeccionPreguntaN1(numPreguntas) {
         contadorDePregunta = 1;
         $("#seccionPreg" + nivelActual + contadorDePregunta).show();
         $("#seccionEvaluacion").fadeOut();        
-        EvaluarPregunta();
+        // EvaluarPregunta();
         seccionEvaluacion2();
     }
     else {
